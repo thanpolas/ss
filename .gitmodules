@@ -1,0 +1,3 @@
+[submodule "superstartup"]
+	path = superstartup
+	url = git@github.com:thanpolas/superstartup.git

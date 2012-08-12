@@ -1,0 +1,13 @@
+{
+  "name": "ss",
+  "description": "Superstartup showcase",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "3.x",
+    "everyauth": "0.x",
+    "jade": "0.x",
+    "less": "1.x",
+    "less-middleware": "0.x"
+  }
+}
