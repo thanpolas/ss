@@ -1,7 +1,29 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+.ui-ico {
+  background-image:url("/assets/img/icons-master.png");
+  background-repeat:no-repeat;
+  display:inline-block;
+  outline:medium none;
+  overflow:hidden;
+  vertical-align:bottom;
+  margin-bottom:0;
+  margin-right:4px;
+  margin-top:0;
 }
-a {
-  color: #00B7FF;
+
+.ui-ico-tw-large {
+    background-position:-0 -43px;
+    height:43px;
+    width:193px;
 }
+
+.ui-ico-fb-large {
+    background-position:-0 -0;
+    height:43px;
+    width:212px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+

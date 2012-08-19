@@ -4,3 +4,27 @@ block body
   div.hero-unit
     h1= title
     p Welcome to #{title}
+  div.row
+    div.span4
+      h2 Login Buttons
+      div#login-btn-twitter.pointer.ui-ico.ui-ico-tw-large
+      div#login-btn-facebook.pointer.ui-ico.ui-ico-fb-large
+    div.span4
+      p More World
+    div.span4
+      p And some more
+
+  ul.user-data
+    li
+        .label User Id
+        .value #{everyauth.user}
+    li
+        .label Go Go
+        - if (req.loggedIn)
+          .value YES
+        - else
+          .value NO
+        .label kor
+        .value #{fb}
+        .label user
+        .value #{req.user}
