@@ -20,10 +20,12 @@ app.configure(function(){
   app.use(express.methodOverride());
   app.use(express.cookieParser('your secret here'));
   app.use(express.session());
+
+  app.use('/assets', express.static(path.join(__dirname, '/assets')));
   app.use(app.router);
-  app.use(require('less-middleware')({ src: __dirname + '/public/assets' }));
-  app.use(express.static(path.join(__dirname, 'public')));
+
 });
+
 
 app.configure('development', function(){
   app.use(express.errorHandler());
