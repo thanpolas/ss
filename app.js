@@ -8,7 +8,7 @@ var express = require('express')
   , http = require('http')
   , path = require('path')
   , everyauth = require('everyauth')
-  , everyauthSetup = require('../models/everyauthSetup');
+  , everyauthSetup = require('./models/everyauthSetup');
 
 var app = express();
 
