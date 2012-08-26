@@ -17,14 +17,14 @@ block body
   ul.user-data
     li
         .label User Id
-        .value #{everyauth.user}
+        .value 000
     li
         .label Go Go
-        - if (req.loggedIn)
+        - if (false)
           .value YES
         - else
           .value NO
         .label kor
         .value #{fb}
         .label user
-        .value #{req.user}
+        .value #{requser}
