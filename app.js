@@ -2,13 +2,15 @@
 /**
  * Module dependencies.
  */
-
 var express = require('express')
   , routes = require('./routes')
   , http = require('http')
   , path = require('path')
+  , authom = require('authom')
   , authSetup = require('./models/authSetup')
-  , authom = require('authom');
+  , userModel = require('./models/user.model')
+  , closure = require('nclosure').nclosure();
+
 
 var app = express();
 
@@ -37,7 +39,7 @@ app.get('/', routes.index);
 app.get('/auth/facebook/check', routes.auth);
 
 app.get("/auth/:service", authom.app);
-app.post("/auth/:service/" + authom.verifyAuthPath, authom.app);
+app.get("/auth/:service/" + authom.verifyAuthPath, authom.app);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));

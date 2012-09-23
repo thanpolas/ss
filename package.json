@@ -5,9 +5,10 @@
   "private": true,
   "dependencies": {
     "express": "3.x",
-    //"authom": "*", // Will include as submodule so we can patch it
     "less": "1.x",
     "jade": "*",
-    "less-middleware": "*"
+    "less-middleware": "*",
+    "nclosure": "*",
+    "grunt-closure-tools": "*"
   }
 }

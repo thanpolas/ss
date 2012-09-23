@@ -2,6 +2,7 @@
 var authom = require('authom');
 
 var conf = require('../conf/conf');
+
 var usersById = {};
 var usersByFbId = {};
 var nextUserId = 1;
