@@ -11,10 +11,10 @@ module.exports = function(grunt) {
     closureDepsWriter: {
       ssnode: {
         closureLibraryPath: 'superstartup/source/closure-library',
-        output_file: 'deps.js',
+        output_file: 'lib/deps.js',
         options: {
-          root: ['views', 'models', 'conf']
-          //root_with_prefix: ['"./ ../../../ss"']
+          //root: ['lib']
+          root_with_prefix: ['"lib ../../../../../../lib"']
         }
       }
     }
