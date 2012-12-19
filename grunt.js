@@ -10,11 +10,19 @@ module.exports = function(grunt) {
   grunt.initConfig({
     closureDepsWriter: {
       ssnode: {
-        closureLibraryPath: 'superstartup/source/closure-library',
+        closureLibraryPath: 'superstartup/closure-library',
         output_file: 'lib/deps.js',
         options: {
           //root: ['lib']
           root_with_prefix: ['"lib ../../../../../../lib"']
+        }
+      },
+      sshtml: {
+        closureLibraryPath: 'superstartup/closure-library',
+        output_file: 'assets/js/deps-showcase.js',
+        options: {
+          //root: ['lib']
+          root_with_prefix: ['"assets/js ../../../../js"']
         }
       }
     }
@@ -22,6 +30,6 @@ module.exports = function(grunt) {
   });
 
   // Default task.
-  grunt.registerTask('default', 'closureDepsWriter:ssnode');
+  grunt.registerTask('default', 'closureDepsWriter');
 
 };
