@@ -1,3 +1,9 @@
+/*jshint camelcase:false */
+/**
+ * [exports description]
+ * @param  {[type]} grunt [description]
+ * @return {[type]}       [description]
+ */
 module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-closure-tools');
@@ -9,19 +15,19 @@ module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
     closureDepsWriter: {
+      options: {
+        closureLibraryPath: 'closure-library/'
+
+      },
       ssnode: {
-        closureLibraryPath: 'superstartup/closure-library',
-        output_file: 'lib/deps.js',
         options: {
-          //root: ['lib']
           root_with_prefix: ['"lib ../../../../../../lib"']
-        }
+        },
+        dest: 'lib/deps.js'
       },
       sshtml: {
-        closureLibraryPath: 'superstartup/closure-library',
-        output_file: 'assets/js/deps-showcase.js',
+        dest: 'assets/js/deps-showcase.js',
         options: {
-          //root: ['lib']
           root_with_prefix: ['"assets/js ../../../../js"']
         }
       }
@@ -30,6 +36,6 @@ module.exports = function(grunt) {
   });
 
   // Default task.
-  grunt.registerTask('default', 'closureDepsWriter');
+  grunt.registerTask('deps', 'closureDepsWriter');
 
 };

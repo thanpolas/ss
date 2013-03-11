@@ -1,14 +1,45 @@
 {
-  "name": "ss",
-  "description": "Superstartup showcase",
+  "name": "superstartup.node",
+  "description": "superstartup showcase",
   "version": "0.0.1",
-  "private": true,
+  "homepage": "https://github.com/thanpolas/ss",
+  "author": {
+    "name": "Thanasis Polychronakis",
+    "email": "thanpolas@gmail.com",
+    "url": "http://thanpol.as"
+  },
+  "github": "https://github.com/thanpolas/ss",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/thanpolas/ss.git"
+  },
+  "bugs": {
+    "url": "https://github.com/thanpolas/ss/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://en.wikipedia.org/wiki/MIT_License"
+    }
+  ],
+  "main": "",
+  "engines": {
+    "node": "~0.8.0"
+  },
   "dependencies": {
     "express": "3.x",
     "less": "1.x",
     "jade": "*",
     "less-middleware": "*",
-    "nclosure": "*",
-    "grunt-closure-tools": "*"
-  }
+    "nclosure": "*"
+
+  },
+  "devDependencies": {
+    "grunt": "~0.4.0",
+    "grunt-contrib-watch": "~0.2.0",
+    "grunt-closure-tools": "~0.7.3",
+    "grunt-regarde": "~0.1.1",
+    "grunt-contrib-livereload": "~0.1.2"
+  },
+  "keywords": []
 }
