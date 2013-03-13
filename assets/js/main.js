@@ -54,8 +54,14 @@ showcase.init = function() {
   ss.config('user.auth.fb.localAuthUrl', '/auth/facebook/verifyAuth');
   ss.config('user.auth.fb.appId', '186392014808053');
   ss.config('user.auth.fb.permissions', 'email,publish_stream');
+  ss.config('user.auth.tw.loginPopup', true);
 
-  ss.init();
+  ss();
+
+
+  $('#login-btn-twitter').on('click', function(){
+    ss.user.tw.login();
+  });
 
 };
 

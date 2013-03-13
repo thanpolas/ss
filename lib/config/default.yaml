@@ -1,0 +1,6 @@
+fb:
+  appId: appId
+  appSecret: secret
+twitter:
+  consumerKey: tw
+  consumerSecret: keys
