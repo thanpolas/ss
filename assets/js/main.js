@@ -49,12 +49,12 @@ showcase.init = function() {
   // showcase.so.render();
 
   // Interface with ss
-  ss.config('user.auth.performLocalAuth', true);
-  ss.config('user.auth.fb.authUrl', '/auth/facebook');
-  ss.config('user.auth.fb.localAuthUrl', '/auth/facebook/verifyAuth');
-  ss.config('user.auth.fb.appId', '186392014808053');
-  ss.config('user.auth.fb.permissions', 'email,publish_stream');
-  ss.config('user.auth.tw.loginPopup', true);
+  ss.config('user.performLocalAuth', true);
+  ss.config('user.fb.authUrl', '/auth/facebook');
+  ss.config('user.fb.localAuthUrl', '/auth/facebook/verifyAuth');
+  ss.config('user.fb.appId', '186392014808053');
+  ss.config('user.fb.permissions', 'email,publish_stream');
+  ss.config('user.tw.loginPopup', true);
 
   ss();
 
