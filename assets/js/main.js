@@ -50,17 +50,22 @@ showcase.init = function() {
 
   // Interface with ss
   ss.config('user.performLocalAuth', true);
-  ss.config('user.fb.authUrl', '/auth/facebook');
-  ss.config('user.fb.localAuthUrl', '/auth/facebook/verifyAuth');
+  ss.config('user.fb.extAuthUrl', '/auth/facebook/verifyAuth');
   ss.config('user.fb.appId', '186392014808053');
   ss.config('user.fb.permissions', 'email,publish_stream');
+
   ss.config('user.tw.loginPopup', true);
 
   ss();
 
-
+  // twitter button
   $('#login-btn-twitter').on('click', function(){
     ss.user.tw.login();
+  });
+
+  // facebook button
+  $('#login-btn-facebook').on('click', function(){
+    ss.user.fb.login();
   });
 
 };

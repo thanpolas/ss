@@ -2,3 +2,4 @@ node_modules
 foo
 npm-debug.log
 config/devel.yaml
+sandbox
